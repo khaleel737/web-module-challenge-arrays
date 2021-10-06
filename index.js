@@ -156,13 +156,13 @@ Use the removeFlavorByName function below to do the following:
 function removeFlavorByName(array, flavor){
   /*your code here*/
   for(let i = 0; i < array.length; i++) {
-    if (array[i].indexOf(flavor)) {
+    if (array[i] === flavor) {
       array.splice(i, 1);
     }
   }
   return array;
 }
-console.log(removeFlavorByName(originalFlavors, 'Vanilla'));
+console.log(removeFlavorByName(originalFlavors, "Vanilla"));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
